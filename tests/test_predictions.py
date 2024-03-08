@@ -15,7 +15,7 @@ from src.predict import make_prediction
 print("make_prediction imported successfully")
 
 def test_mult(a=1, b=2):
-   assert a*b = 2
+   assert a*b == 2
 
 # def test_make_prediction(sample_input_data):
 #     # # Given
