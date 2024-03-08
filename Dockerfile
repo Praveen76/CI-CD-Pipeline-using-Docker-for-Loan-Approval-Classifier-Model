@@ -11,7 +11,7 @@ WORKDIR /src_api
 RUN pip install --upgrade pip
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r requirements/requirements.txt
 
 # Expose port for application
 EXPOSE 8001
