@@ -1,0 +1,70 @@
+# Package Overview
+package_name: src
+
+# Data Files
+training_data_file: data.csv
+test_data_file: data.csv
+
+# Variables
+# The variable we are attempting to predict (Survival)
+target: Approved
+
+pipeline_name: loan_approval_classifier
+pipeline_save_file: loan_approval_classifier_model_output_v
+
+features:      # final features to be use
+  - BorrowerAge
+  - TotalLoanAmount
+  - CreditScore
+  - CLTV
+  - DTI
+  - LoanPurpose
+  - LoanType
+  - ZipCode
+  - BorrowerOwnRent
+  - Education
+  - LeadSourceGroup
+
+num_vars:
+  - BorrowerAge
+  - TotalLoanAmount
+  - CreditScore
+  - CLTV
+  - DTI
+
+cat_vars:
+  - LoanPurpose
+  - LoanType
+  - ZipCode
+  - BorrowerOwnRent
+  - Education
+  - LeadSourceGroup
+
+unused_fields:  # Features to drop before pipeline
+  - LeadID
+  - DateAdded
+  - LoanOfficer
+  - Group
+  - IsCoBorrowerower
+  - BranchCode
+  - CoBorrowerTotalMonthlyIncome
+  - BorrowerYearsInSchool
+  - CoBorrowerYearsInSchool
+  - CoBorrowerAge
+  - BorrowerCity
+  - BorrowerState
+  - Group
+  - ApprovalDate
+  - LoanNumber
+  - BorrowerTotalMonthlyIncome
+
+                    
+# set train/test split
+test_size: 0.20
+
+# to set the random seed
+random_state: 42
+# alogrithm parameters
+n_estimators: 150
+max_depth: 5
+

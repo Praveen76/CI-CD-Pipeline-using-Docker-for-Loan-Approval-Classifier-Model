@@ -1,0 +1,13 @@
+numpy==1.23.2   #>=1.21.0,<2.0.0
+pandas>=1.3.5,<2.0.0
+pydantic>=1.8.1,<2.0.0
+scikit-learn==1.3.0
+strictyaml>=1.3.2,<2.0.0
+ruamel.yaml>=0.16.12,<1.0.0
+joblib>=1.0.1,<2.0.0
+
+
+uvicorn>=0.16.0,<0.18.0
+fastapi>=0.64.0,<1.0.0
+pydantic #>=1.8.1,<2.0.0
+requests>=2.23.0,<2.24.0
