@@ -14,7 +14,9 @@ from src.processing.features import MissValImputer
 
 print("========================= config imported successfully=========================")
 
-
+def test_add(a=1, b=2):
+   assert a+b = 3
+   
 # def test_miss_val_imputer(sample_input_data):
 #     # Given
 #     print(" sample_input_data columns:", sample_input_data.columns)
