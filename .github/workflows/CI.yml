@@ -92,12 +92,12 @@ jobs:
     - name: Build the Docker image for Fastapi app
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
-      run: docker build . -f Dockerfile -t $DOCKER_USER/titanic-fastapi:latest
+      run: docker build . -f Dockerfile -t $DOCKER_USER/lac-fastapi:latest
 
     - name: Push the Docker Image
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
-      run: docker push $DOCKER_USER/titanic-fastapi
+      run: docker push $DOCKER_USER/lac-fastapi
 
     - name: Logout to Docker hub
       run: docker logout
