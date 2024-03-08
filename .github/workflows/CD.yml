@@ -1,4 +1,4 @@
-name: CD Pipeline
+name: Continuous Deployment Pipeline
 
 # Only trigger, when the build workflow succeeded i.e. CI Pipeline
 on:
