@@ -6,7 +6,6 @@ on:
     workflows: ["CI Pipeline"]
     types:
       - completed
-
 jobs:
   deploy:
     runs-on: self-hosted #will run on Ec2 Instance now.
