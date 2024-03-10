@@ -39,7 +39,7 @@ CI-CD-Pipeline-using-Docker-for-Loan-Approval-Classifier-Model/
 ├── src/
 │   └── (source code for the Loan Approval Classifier Model)
 ├── src_api/
-│   └── (API source code, excluding 'dist/demo.txt')
+│   └── (FASTAPI source code)
 ├── tests/
 │   └── (contains test scripts)
 ├── Dockerfile
